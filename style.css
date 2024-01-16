@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.side-bar {
+  background: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#nav {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#nav li button {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#middle {
+  height: 100vh;
+  background: black;
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#letter {
+  font-size: 5rem;
+}
+
+.button {
+  display: inline-block;
+  background: pink;
+  border: none;
+  outline: none;
+  color: black;
+  border-radius: 3px;
+  box-shadow: 0 5px 0px darken(pink, 0%);
+  border-bottom: 2px solid darken(pink, 3%);
+
+}
+
+.button:hover {
+  background: darken(pink, 5%);
+  box-shadow: 0 4px 1px darken(pink, 5%);
+  border-bottom: 2px solid darken(pink, 8%);
+  transition: all 0.1s ease-in;
+}
+
+.button:active {
+  transform: translateY(0.5rem);
+  border-bottom-width: 1rem;
+  box-shadow: none;
+}
+
+.button-pressed {
+  transform: translateY(0.75rem);
+  border-bottom-width: 2px;
+  box-shadow: none;
+}
+
+#matchBoard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+#matchBoard img {
+  height: 20vh;
+  width: 15vw;
+  max-width: 60%;
+  ;
+}
+
+.dinoRace {
+  visibility: visible;
+  min-width: 1000px;
+  min-height: 500px;
+  z-index: 999;
+}
+
+.dinoRaceHidden {
+  visibility: hidden;
+  width: 0;
+  min-height: 0;
+}
