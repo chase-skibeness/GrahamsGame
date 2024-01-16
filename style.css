@@ -9,7 +9,7 @@ body {
 }
 
 .side-bar {
-  background: pink;
+  background: rgb(0, 223, 148);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
 #middle {
   height: 100vh;
   background: black;
-  color: pink;
+  color: rgb(0, 223, 148);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -42,20 +42,20 @@ body {
 
 .button {
   display: inline-block;
-  background: pink;
+  background: rgb(0, 223, 148);
   border: none;
   outline: none;
   color: black;
   border-radius: 3px;
-  box-shadow: 0 5px 0px darken(pink, 0%);
-  border-bottom: 2px solid darken(pink, 3%);
+  box-shadow: 0 5px 0px darken(rgb(0, 223, 148), 0%);
+  border-bottom: 2px solid darken(rgb(0, 223, 148), 3%);
 
 }
 
 .button:hover {
-  background: darken(pink, 5%);
-  box-shadow: 0 4px 1px darken(pink, 5%);
-  border-bottom: 2px solid darken(pink, 8%);
+  background: darken(rgb(0, 223, 148), 5%);
+  box-shadow: 0 4px 1px darken(rgb(0, 223, 148), 5%);
+  border-bottom: 2px solid darken(rgb(0, 223, 148), 8%);
   transition: all 0.1s ease-in;
 }
 
